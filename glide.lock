@@ -1,5 +1,5 @@
-hash: 74869c36aa4bcea2f0a18df33a760f17fa6a6eb0a498b47cfab997c544299443
-updated: 2018-10-15T01:20:12.41140137-07:00
+hash: 81bf6f457ce4c1f724285d629937bda3edd697d0fc8210e39ee570cd85eaf0eb
+updated: 2018-10-24T10:02:05.462764463-07:00
 imports:
 - name: bitbucket.org/ww/goautoneg
   version: 75cd24fc2f2c2a2088577d12123ddee5f54e0675
@@ -286,7 +286,7 @@ imports:
   - compiler
   - extensions
 - name: github.com/gorilla/mux
-  version: deb579d6e030503f430978ee229008b9bc912d40
+  version: 521ea7b17d02faf8d3afea6737573942ceac59c5
 - name: github.com/graymeta/stow
   version: 1849a82ac7fbd3e5cb144bcc711544e90903eac4
   repo: https://github.com/appscode/stow.git
@@ -384,7 +384,7 @@ imports:
 - name: github.com/spf13/cobra
   version: ef82de70bb3f60c65fb8eebacbb2d122ef517385
 - name: github.com/spf13/pflag
-  version: 583c0c0531f06d5278b7d917446061adc344b5cd
+  version: 298182f68c66c05229eb03ac171abe6e309ee79a
 - name: github.com/ugorji/go
   version: ded73eae5db7e7a0ef6f55aace87a2873c5d2b74
   subpackages:
@@ -883,7 +883,7 @@ imports:
   - client/clientset/versioned/scheme
   - client/clientset/versioned/typed/appcatalog/v1alpha1
 - name: kmodules.xyz/monitoring-agent-api
-  version: 626ef00ec8baebe0d2b451cf8f06450c2588f237
+  version: 1153fe9fb110258b685ac5a718bc84c719a38b4a
   repo: https://github.com/kmodules/monitoring-agent-api.git
   vcs: git
   subpackages:
