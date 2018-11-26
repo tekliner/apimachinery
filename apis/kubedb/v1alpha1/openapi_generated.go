@@ -2409,6 +2409,19 @@ func schema_apimachinery_apis_kubedb_v1alpha1_PostgresSpec(ref common.ReferenceC
 							Format:      "",
 						},
 					},
+					"firstrun": {
+						SchemaProps: spec.SchemaProps{
+							Description: "First run Made to perform actions during database cluster creating. For example, upgrade to new version or structure change",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"firstrunconfigmap": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
 					"streamingMode": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Streaming mode",
