@@ -42,7 +42,7 @@ type PostgresSpec struct {
 	// First run
 	// Made to perform actions during database cluster creating.
 	// For example, upgrade to new version or structure change
-	FirstRun          *bool          `json:"firstrun,omitempty"`
+	FirstRun          *bool   `json:"firstrun,omitempty"`
 	FirstRunConfigMap *string `json:"firstrunconfigmap,omitempty"`
 
 	// Streaming mode
