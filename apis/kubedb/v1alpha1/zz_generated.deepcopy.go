@@ -1253,12 +1253,12 @@ func (in *PostgresSpec) DeepCopyInto(out *PostgresSpec) {
 	}
 	if in.FirstRun != nil {
 		in, out := &in.FirstRun, &out.FirstRun
-		*out = new(PostgresFirstRun)
+		*out = new(bool)
 		**out = **in
 	}
 	if in.FirstRunConfigMap != nil {
 		in, out := &in.FirstRunConfigMap, &out.FirstRunConfigMap
-		*out = new(PostgresFirstRunConfigMap)
+		*out = new(string)
 		**out = **in
 	}
 	if in.StreamingMode != nil {
