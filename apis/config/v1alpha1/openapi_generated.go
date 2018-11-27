@@ -34,46 +34,46 @@ import (
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
 		"github.com/appscode/go/encoding/json/types.IntHash":                                schema_go_encoding_json_types_IntHash(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersion":         schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersion(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionDatabase": schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionDatabase(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionExporter": schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionExporter(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionList":     schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionList(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionSpec":     schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionSpec(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionTools":    schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionTools(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersion":                  schema_apimachinery_apis_catalog_v1alpha1_EtcdVersion(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionDatabase":          schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionDatabase(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionExporter":          schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionExporter(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionList":              schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionList(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionSpec":              schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionSpec(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionTools":             schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionTools(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersion":             schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersion(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionDatabase":     schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionDatabase(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionExporter":     schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionExporter(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionList":         schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionList(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionSpec":         schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionSpec(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersion":               schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersion(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionDatabase":       schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionDatabase(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionExporter":       schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionExporter(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionList":           schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionList(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionSpec":           schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionSpec(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionTools":          schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionTools(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersion":                 schema_apimachinery_apis_catalog_v1alpha1_MySQLVersion(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionDatabase":         schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionDatabase(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionExporter":         schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionExporter(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionList":             schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionList(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionSpec":             schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionSpec(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionTools":            schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionTools(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersion":              schema_apimachinery_apis_catalog_v1alpha1_PostgresVersion(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionDatabase":      schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionDatabase(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionExporter":      schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionExporter(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionList":          schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionList(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionSpec":          schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionSpec(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionTools":         schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionTools(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersion":                 schema_apimachinery_apis_catalog_v1alpha1_RedisVersion(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionDatabase":         schema_apimachinery_apis_catalog_v1alpha1_RedisVersionDatabase(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionExporter":         schema_apimachinery_apis_catalog_v1alpha1_RedisVersionExporter(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionList":             schema_apimachinery_apis_catalog_v1alpha1_RedisVersionList(ref),
-		"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionSpec":             schema_apimachinery_apis_catalog_v1alpha1_RedisVersionSpec(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersion":         schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersion(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionDatabase": schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionDatabase(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionExporter": schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionExporter(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionList":     schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionList(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionSpec":     schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionSpec(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionTools":    schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionTools(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersion":                  schema_apimachinery_apis_catalog_v1alpha1_EtcdVersion(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionDatabase":          schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionDatabase(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionExporter":          schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionExporter(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionList":              schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionList(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionSpec":              schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionSpec(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionTools":             schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionTools(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersion":             schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersion(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionDatabase":     schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionDatabase(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionExporter":     schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionExporter(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionList":         schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionList(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionSpec":         schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionSpec(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersion":               schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersion(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionDatabase":       schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionDatabase(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionExporter":       schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionExporter(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionList":           schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionList(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionSpec":           schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionSpec(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionTools":          schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionTools(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersion":                 schema_apimachinery_apis_catalog_v1alpha1_MySQLVersion(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionDatabase":         schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionDatabase(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionExporter":         schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionExporter(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionList":             schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionList(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionSpec":             schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionSpec(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionTools":            schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionTools(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersion":              schema_apimachinery_apis_catalog_v1alpha1_PostgresVersion(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionDatabase":      schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionDatabase(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionExporter":      schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionExporter(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionList":          schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionList(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionSpec":          schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionSpec(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionTools":         schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionTools(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersion":                 schema_apimachinery_apis_catalog_v1alpha1_RedisVersion(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionDatabase":         schema_apimachinery_apis_catalog_v1alpha1_RedisVersionDatabase(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionExporter":         schema_apimachinery_apis_catalog_v1alpha1_RedisVersionExporter(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionList":             schema_apimachinery_apis_catalog_v1alpha1_RedisVersionList(ref),
+		"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionSpec":             schema_apimachinery_apis_catalog_v1alpha1_RedisVersionSpec(ref),
 		"k8s.io/api/apps/v1.ControllerRevision":                                             schema_k8sio_api_apps_v1_ControllerRevision(ref),
 		"k8s.io/api/apps/v1.ControllerRevisionList":                                         schema_k8sio_api_apps_v1_ControllerRevisionList(ref),
 		"k8s.io/api/apps/v1.DaemonSet":                                                      schema_k8sio_api_apps_v1_DaemonSet(ref),
@@ -396,14 +396,14 @@ func schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersion(ref common.R
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -479,7 +479,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionList(ref comm
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersion"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersion"),
 									},
 								},
 							},
@@ -489,7 +489,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionList(ref comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -509,19 +509,19 @@ func schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionSpec(ref comm
 					"db": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Database Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionDatabase"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionDatabase"),
 						},
 					},
 					"exporter": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Exporter Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionExporter"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionExporter"),
 						},
 					},
 					"tools": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Tools Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionTools"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionTools"),
 						},
 					},
 					"deprecated": {
@@ -536,7 +536,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_ElasticsearchVersionSpec(ref comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionDatabase", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionExporter", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionTools"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionDatabase", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionExporter", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.ElasticsearchVersionTools"},
 	}
 }
 
@@ -587,14 +587,14 @@ func schema_apimachinery_apis_catalog_v1alpha1_EtcdVersion(ref common.ReferenceC
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -670,7 +670,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionList(ref common.Refere
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersion"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersion"),
 									},
 								},
 							},
@@ -680,7 +680,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionList(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -700,19 +700,19 @@ func schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionSpec(ref common.Refere
 					"db": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Database Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionDatabase"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionDatabase"),
 						},
 					},
 					"exporter": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Exporter Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionExporter"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionExporter"),
 						},
 					},
 					"tools": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Tools Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionTools"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionTools"),
 						},
 					},
 					"deprecated": {
@@ -727,7 +727,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_EtcdVersionSpec(ref common.Refere
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionDatabase", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionExporter", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.EtcdVersionTools"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionDatabase", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionExporter", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.EtcdVersionTools"},
 	}
 }
 
@@ -778,14 +778,14 @@ func schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersion(ref common.Refer
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -861,7 +861,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionList(ref common.R
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersion"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersion"),
 									},
 								},
 							},
@@ -871,7 +871,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionList(ref common.R
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -891,13 +891,13 @@ func schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionSpec(ref common.R
 					"db": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Database Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionDatabase"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionDatabase"),
 						},
 					},
 					"exporter": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Exporter Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionExporter"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionExporter"),
 						},
 					},
 					"deprecated": {
@@ -912,7 +912,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MemcachedVersionSpec(ref common.R
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionDatabase", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MemcachedVersionExporter"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionDatabase", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MemcachedVersionExporter"},
 	}
 }
 
@@ -943,14 +943,14 @@ func schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersion(ref common.Referen
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1026,7 +1026,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionList(ref common.Ref
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersion"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersion"),
 									},
 								},
 							},
@@ -1036,7 +1036,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionList(ref common.Ref
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1056,19 +1056,19 @@ func schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionSpec(ref common.Ref
 					"db": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Database Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionDatabase"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionDatabase"),
 						},
 					},
 					"exporter": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Exporter Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionExporter"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionExporter"),
 						},
 					},
 					"tools": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Tools Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionTools"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionTools"),
 						},
 					},
 					"deprecated": {
@@ -1083,7 +1083,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MongoDBVersionSpec(ref common.Ref
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionDatabase", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionExporter", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MongoDBVersionTools"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionDatabase", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionExporter", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MongoDBVersionTools"},
 	}
 }
 
@@ -1134,14 +1134,14 @@ func schema_apimachinery_apis_catalog_v1alpha1_MySQLVersion(ref common.Reference
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1217,7 +1217,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionList(ref common.Refer
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersion"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersion"),
 									},
 								},
 							},
@@ -1227,7 +1227,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionList(ref common.Refer
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1247,19 +1247,19 @@ func schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionSpec(ref common.Refer
 					"db": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Database Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionDatabase"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionDatabase"),
 						},
 					},
 					"exporter": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Exporter Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionExporter"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionExporter"),
 						},
 					},
 					"tools": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Tools Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionTools"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionTools"),
 						},
 					},
 					"deprecated": {
@@ -1274,7 +1274,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_MySQLVersionSpec(ref common.Refer
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionDatabase", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionExporter", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.MySQLVersionTools"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionDatabase", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionExporter", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.MySQLVersionTools"},
 	}
 }
 
@@ -1325,14 +1325,14 @@ func schema_apimachinery_apis_catalog_v1alpha1_PostgresVersion(ref common.Refere
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1408,7 +1408,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionList(ref common.Re
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersion"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersion"),
 									},
 								},
 							},
@@ -1418,7 +1418,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionList(ref common.Re
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1438,19 +1438,19 @@ func schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionSpec(ref common.Re
 					"db": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Database Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionDatabase"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionDatabase"),
 						},
 					},
 					"exporter": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Exporter Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionExporter"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionExporter"),
 						},
 					},
 					"tools": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Tools Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionTools"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionTools"),
 						},
 					},
 					"deprecated": {
@@ -1465,7 +1465,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_PostgresVersionSpec(ref common.Re
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionDatabase", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionExporter", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.PostgresVersionTools"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionDatabase", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionExporter", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.PostgresVersionTools"},
 	}
 }
 
@@ -1516,14 +1516,14 @@ func schema_apimachinery_apis_catalog_v1alpha1_RedisVersion(ref common.Reference
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1599,7 +1599,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_RedisVersionList(ref common.Refer
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersion"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersion"),
 									},
 								},
 							},
@@ -1609,7 +1609,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_RedisVersionList(ref common.Refer
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersion", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1629,13 +1629,13 @@ func schema_apimachinery_apis_catalog_v1alpha1_RedisVersionSpec(ref common.Refer
 					"db": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Database Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionDatabase"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionDatabase"),
 						},
 					},
 					"exporter": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Exporter Image",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionExporter"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionExporter"),
 						},
 					},
 					"deprecated": {
@@ -1650,7 +1650,7 @@ func schema_apimachinery_apis_catalog_v1alpha1_RedisVersionSpec(ref common.Refer
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionDatabase", "github.com/kubedb/apimachinery/apis/catalog/v1alpha1.RedisVersionExporter"},
+			"github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionDatabase", "github.com/tekliner/apimachinery/apis/catalog/v1alpha1.RedisVersionExporter"},
 	}
 }
 

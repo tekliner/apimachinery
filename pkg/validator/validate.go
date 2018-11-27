@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/appscode/go/arrays"
-	api "github.com/kubedb/apimachinery/apis/kubedb/v1alpha1"
+	api "github.com/tekliner/apimachinery/apis/kubedb/v1alpha1"
 	"github.com/pkg/errors"
 	core "k8s.io/api/core/v1"
 	kerr "k8s.io/apimachinery/pkg/api/errors"
