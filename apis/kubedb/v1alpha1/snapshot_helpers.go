@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 
 	crdutils "github.com/appscode/kutil/apiextensions/v1beta1"
-	"github.com/kubedb/apimachinery/apis"
+	"github.com/tekliner/apimachinery/apis"
 	"github.com/pkg/errors"
 	apiextensions "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 )
@@ -71,7 +71,7 @@ func (s Snapshot) CustomResourceDefinition() *apiextensions.CustomResourceDefini
 		Labels: crdutils.Labels{
 			LabelsMap: map[string]string{"app": "kubedb"},
 		},
-		SpecDefinitionName:      "github.com/kubedb/apimachinery/apis/kubedb/v1alpha1.Snapshot",
+		SpecDefinitionName:      "github.com/tekliner/apimachinery/apis/kubedb/v1alpha1.Snapshot",
 		EnableValidation:        true,
 		GetOpenAPIDefinitions:   GetOpenAPIDefinitions,
 		EnableStatusSubresource: apis.EnableStatusSubresource,

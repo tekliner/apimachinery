@@ -35,28 +35,28 @@ import (
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
 		"github.com/appscode/go/encoding/json/types.IntHash":                                        schema_go_encoding_json_types_IntHash(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequest":          schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequest(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestCondition": schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestCondition(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestList":      schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestList(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestSpec":      schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestSpec(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestStatus":    schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestStatus(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.Lease":                          schema_apimachinery_apis_authorization_v1alpha1_Lease(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRole":                    schema_apimachinery_apis_authorization_v1alpha1_MongoDBRole(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleCondition":           schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleCondition(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleList":                schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleList(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleSpec":                schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleSpec(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleStatus":              schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleStatus(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRole":                      schema_apimachinery_apis_authorization_v1alpha1_MySQLRole(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleCondition":             schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleCondition(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleList":                  schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleList(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleSpec":                  schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleSpec(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleStatus":                schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleStatus(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRole":                   schema_apimachinery_apis_authorization_v1alpha1_PostgresRole(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleCondition":          schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleCondition(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleList":               schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleList(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleSpec":               schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleSpec(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleStatus":             schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleStatus(ref),
-		"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.RoleReference":                  schema_apimachinery_apis_authorization_v1alpha1_RoleReference(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequest":          schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequest(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestCondition": schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestCondition(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestList":      schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestList(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestSpec":      schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestSpec(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestStatus":    schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestStatus(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.Lease":                          schema_apimachinery_apis_authorization_v1alpha1_Lease(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRole":                    schema_apimachinery_apis_authorization_v1alpha1_MongoDBRole(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleCondition":           schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleCondition(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleList":                schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleList(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleSpec":                schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleSpec(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleStatus":              schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleStatus(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRole":                      schema_apimachinery_apis_authorization_v1alpha1_MySQLRole(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleCondition":             schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleCondition(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleList":                  schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleList(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleSpec":                  schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleSpec(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleStatus":                schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleStatus(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRole":                   schema_apimachinery_apis_authorization_v1alpha1_PostgresRole(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleCondition":          schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleCondition(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleList":               schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleList(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleSpec":               schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleSpec(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleStatus":             schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleStatus(ref),
+		"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.RoleReference":                  schema_apimachinery_apis_authorization_v1alpha1_RoleReference(ref),
 		"k8s.io/api/apps/v1.ControllerRevision":                                                     schema_k8sio_api_apps_v1_ControllerRevision(ref),
 		"k8s.io/api/apps/v1.ControllerRevisionList":                                                 schema_k8sio_api_apps_v1_ControllerRevisionList(ref),
 		"k8s.io/api/apps/v1.DaemonSet":                                                              schema_k8sio_api_apps_v1_DaemonSet(ref),
@@ -401,19 +401,19 @@ func schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequest(ref c
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestStatus"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestSpec", "github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestSpec", "github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -489,7 +489,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestList(r
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequest"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequest"),
 									},
 								},
 							},
@@ -499,7 +499,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestList(r
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequest", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequest", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -512,7 +512,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestSpec(r
 					"roleRef": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Contains vault database role info",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.RoleReference"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.RoleReference"),
 						},
 					},
 					"subjects": {
@@ -539,7 +539,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestSpec(r
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.RoleReference", "k8s.io/api/rbac/v1.Subject"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.RoleReference", "k8s.io/api/rbac/v1.Subject"},
 	}
 }
 
@@ -555,7 +555,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestStatus
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestCondition"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestCondition"),
 									},
 								},
 							},
@@ -570,14 +570,14 @@ func schema_apimachinery_apis_authorization_v1alpha1_DatabaseAccessRequestStatus
 					"lease": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Contains lease info",
-							Ref:         ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.Lease"),
+							Ref:         ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.Lease"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestCondition", "github.com/kubedb/apimachinery/apis/authorization/v1alpha1.Lease", "k8s.io/api/core/v1.LocalObjectReference"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.DatabaseAccessRequestCondition", "github.com/tekliner/apimachinery/apis/authorization/v1alpha1.Lease", "k8s.io/api/core/v1.LocalObjectReference"},
 	}
 }
 
@@ -643,19 +643,19 @@ func schema_apimachinery_apis_authorization_v1alpha1_MongoDBRole(ref common.Refe
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleStatus"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleSpec", "github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleSpec", "github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -731,7 +731,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleList(ref common.
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRole"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRole"),
 									},
 								},
 							},
@@ -741,7 +741,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleList(ref common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRole", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRole", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -836,7 +836,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleStatus(ref commo
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleCondition"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleCondition"),
 									},
 								},
 							},
@@ -846,7 +846,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_MongoDBRoleStatus(ref commo
 			},
 		},
 		Dependencies: []string{
-			"github.com/appscode/go/encoding/json/types.IntHash", "github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MongoDBRoleCondition"},
+			"github.com/appscode/go/encoding/json/types.IntHash", "github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MongoDBRoleCondition"},
 	}
 }
 
@@ -877,19 +877,19 @@ func schema_apimachinery_apis_authorization_v1alpha1_MySQLRole(ref common.Refere
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleStatus"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleSpec", "github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleSpec", "github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -965,7 +965,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleList(ref common.Re
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRole"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRole"),
 									},
 								},
 							},
@@ -975,7 +975,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleList(ref common.Re
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRole", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRole", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1070,7 +1070,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleStatus(ref common.
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleCondition"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleCondition"),
 									},
 								},
 							},
@@ -1080,7 +1080,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_MySQLRoleStatus(ref common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/appscode/go/encoding/json/types.IntHash", "github.com/kubedb/apimachinery/apis/authorization/v1alpha1.MySQLRoleCondition"},
+			"github.com/appscode/go/encoding/json/types.IntHash", "github.com/tekliner/apimachinery/apis/authorization/v1alpha1.MySQLRoleCondition"},
 	}
 }
 
@@ -1111,19 +1111,19 @@ func schema_apimachinery_apis_authorization_v1alpha1_PostgresRole(ref common.Ref
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleSpec"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleStatus"),
+							Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleSpec", "github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleSpec", "github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1199,7 +1199,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleList(ref common
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRole"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRole"),
 									},
 								},
 							},
@@ -1209,7 +1209,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleList(ref common
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRole", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRole", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1333,7 +1333,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleStatus(ref comm
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleCondition"),
+										Ref: ref("github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleCondition"),
 									},
 								},
 							},
@@ -1343,7 +1343,7 @@ func schema_apimachinery_apis_authorization_v1alpha1_PostgresRoleStatus(ref comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/appscode/go/encoding/json/types.IntHash", "github.com/kubedb/apimachinery/apis/authorization/v1alpha1.PostgresRoleCondition"},
+			"github.com/appscode/go/encoding/json/types.IntHash", "github.com/tekliner/apimachinery/apis/authorization/v1alpha1.PostgresRoleCondition"},
 	}
 }
 
