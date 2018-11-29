@@ -1,5 +1,5 @@
 hash: 0c4eb1cac19998f672e17af4506616a044b6a61bbba8193ebd3b34eab34da57b
-updated: 2018-11-27T13:14:41.377429465+07:00
+updated: 2018-11-29T15:31:13.452988544+07:00
 imports:
 - name: bitbucket.org/ww/goautoneg
   version: 75cd24fc2f2c2a2088577d12123ddee5f54e0675
@@ -202,7 +202,7 @@ imports:
 - name: github.com/dgrijalva/jwt-go
   version: 01aeca54ebda6e0fbfafd0a524d234159c05ec20
 - name: github.com/docker/distribution
-  version: 93e082742a009850ac46962150b2f652a822c5ff
+  version: aa985ba8897a426e5db31b36cd8cca83cf85cead
   subpackages:
   - digestset
   - manifest
