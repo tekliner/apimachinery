@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 
 	crdutils "github.com/appscode/kutil/apiextensions/v1beta1"
-	"github.com/tekliner/apimachinery/apis"
 	"github.com/pkg/errors"
+	"github.com/tekliner/apimachinery/apis"
 	apiextensions "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 )
 
