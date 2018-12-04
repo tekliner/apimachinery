@@ -1,9 +1,9 @@
 package v1alpha1
 
 import (
+	store "github.com/tekliner/objectstore-api/api/v1"
+	ofst "github.com/tekliner/offshoot-api/api/v1"
 	core "k8s.io/api/core/v1"
-	store "kmodules.xyz/objectstore-api/api/v1"
-	ofst "kmodules.xyz/offshoot-api/api/v1"
 )
 
 type InitSpec struct {

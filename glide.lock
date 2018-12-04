@@ -1,5 +1,5 @@
-hash: 0c4eb1cac19998f672e17af4506616a044b6a61bbba8193ebd3b34eab34da57b
-updated: 2018-11-29T15:31:13.452988544+07:00
+hash: e5b145423403dd46923a592eae1d017cb825544332cbeee1414b8b42d19cc99f
+updated: 2018-12-04T16:49:25.576351316+07:00
 imports:
 - name: bitbucket.org/ww/goautoneg
   version: 75cd24fc2f2c2a2088577d12123ddee5f54e0675
@@ -13,7 +13,7 @@ imports:
   subpackages:
   - registry
 - name: github.com/appscode/go
-  version: a6d58457b39324ead2ffb1f24be7a0a638c9f112
+  version: aa0a55d74dac66f9b9bec9c0e7b67944115a3f44
   subpackages:
   - arrays
   - context
@@ -35,7 +35,7 @@ imports:
   subpackages:
   - admission/v1beta1
 - name: github.com/appscode/kutil
-  version: 5e4dc08e9e6e00fcf397b7186a3918dc4dcb9426
+  version: 239838b6231b8a27a66426e25678351ce50c4cfd
   subpackages:
   - apiextensions/v1beta1
   - core/v1
@@ -202,7 +202,7 @@ imports:
 - name: github.com/dgrijalva/jwt-go
   version: 01aeca54ebda6e0fbfafd0a524d234159c05ec20
 - name: github.com/docker/distribution
-  version: aa985ba8897a426e5db31b36cd8cca83cf85cead
+  version: 40b7b5830a2337bb07627617740c0e39eb92800c
   subpackages:
   - digestset
   - manifest
@@ -229,19 +229,19 @@ imports:
 - name: github.com/fatih/structs
   version: 878a968ab22548362a09bdb3322f98b00f470d46
 - name: github.com/fsnotify/fsnotify
-  version: f12c6236fe7b5cf6bcf30e5935d08cb079d78334
+  version: ccc981bf80385c528a65fbfdd49bf2d8da22aa23
 - name: github.com/ghodss/yaml
   version: 0ca9ea5df5451ffdf184b4428c902747c2c11cd7
 - name: github.com/go-ini/ini
-  version: 300e940a926eb277d3901b20bdfcc54928ad3642
+  version: b194b0c75f9b798e7001ad4384e4775c09a5f666
 - name: github.com/go-openapi/jsonpointer
   version: 46af16f9f7b149af66e5d1bd010e3574dc06de98
 - name: github.com/go-openapi/jsonreference
-  version: 13c6e3589ad90f49bd3e3bbe2c2cb3d7a4142272
+  version: 8483a886a90412cd6858df4ea3483dce9c8e35a3
 - name: github.com/go-openapi/spec
-  version: 1de3e0542de65ad8d75452a595886fdd0befb363
+  version: 6aced65f8501fe1217321abf0749d354824ba2ff
 - name: github.com/go-openapi/swag
-  version: f3f9494671f93fcff853e3c6e9e948b3eb71e590
+  version: 1d0bd113de87027671077d3c71eb3ac5d7dbba72
 - name: github.com/gogo/protobuf
   version: c0656edd0d9eab7c66d1eb0c568f9039345796f7
   subpackages:
@@ -267,7 +267,7 @@ imports:
 - name: github.com/google/btree
   version: 7d79101e329e5a3adf994758c578dab82b90c017
 - name: github.com/google/go-cmp
-  version: 3af367b6b30c263d47e8895973edcca9a49cf029
+  version: 2248b49eaa8e1c8c0963ee77b40841adbc19d4ca
   subpackages:
   - cmp
   - cmp/internal/diff
@@ -276,7 +276,7 @@ imports:
 - name: github.com/google/gofuzz
   version: 44d81051d367757e1c7c6a5a86423ece9afcf63c
 - name: github.com/google/uuid
-  version: 8c31c18f31ede9fc8eae72290a7e7a8064e9b3e3
+  version: 9b3b1e0f5f99ae461456d768e7d301a7acdaa2d8
 - name: github.com/googleapis/gnostic
   version: 68f4ded48ba9414dab2ae69b3f0d69971da73aa5
   subpackages:
@@ -308,7 +308,7 @@ imports:
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
 - name: github.com/jmespath/go-jmespath
-  version: 0b12d6b521d83fc7f755e7cfc1b1fbdd35a01a74
+  version: c2b33e8439af944379acbdd9c3a5fe0bc44bd8a5
 - name: github.com/json-iterator/go
   version: 1624edc4454b8682399def8740d46db5e4362ba4
 - name: github.com/mailru/easyjson
@@ -375,9 +375,10 @@ imports:
 - name: github.com/PuerkitoBio/urlesc
   version: 5bd2802263f21d8788851d5305584c82a5c75d7e
 - name: github.com/satori/go.uuid
-  version: f58768cc1a7a7e77a3bd49e98cdd21419399b6a3
+  version: b2ce2384e17bbe0c6d34077efa39dbab3e09123b
 - name: github.com/sergi/go-diff
-  version: 97b2266dfe4bd4ea1b81a463322f04f8b724801e
+  version: 24e2351369ec4949b2ed0dc5c477afdd4c4034e8
+  repo: https://github.com/sergi/go-diff
   subpackages:
   - diffmatchpatch
 - name: github.com/sirupsen/logrus
@@ -386,16 +387,45 @@ imports:
   version: ef82de70bb3f60c65fb8eebacbb2d122ef517385
 - name: github.com/spf13/pflag
   version: 583c0c0531f06d5278b7d917446061adc344b5cd
+- name: github.com/tekliner/custom-resources
+  version: e35ff856db3f5cf89e1a08a399fcc803c2aebf5b
+  repo: https://github.com/tekliner/custom-resources.git
+  vcs: git
+  subpackages:
+  - apis/appcatalog
+  - apis/appcatalog/v1alpha1
+  - client/clientset/versioned/scheme
+  - client/clientset/versioned/typed/appcatalog/v1alpha1
+- name: github.com/tekliner/monitoring-agent-api
+  version: 9b7172e67e8725e5cadfdd64a0f531bb4db0fff3
+  repo: https://github.com/tekliner/monitoring-agent-api.git
+  vcs: git
+  subpackages:
+  - api/v1
+- name: github.com/tekliner/objectstore-api
+  version: a646c9bc54b80d5f99e3bbbed1d6e106cc52d586
+  repo: https://github.com/tekliner/objectstore-api.git
+  vcs: git
+  subpackages:
+  - api/v1
+  - osm
+- name: github.com/tekliner/offshoot-api
+  version: 2b5d82ec85c39e5e6ac03ed436b28a58c7cb9b42
+  repo: https://github.com/tekliner/offshoot-api.git
+  vcs: git
+  subpackages:
+  - api/v1
 - name: github.com/ugorji/go
   version: ded73eae5db7e7a0ef6f55aace87a2873c5d2b74
   subpackages:
   - codec
 - name: github.com/yudai/gojsondiff
-  version: 7b1b7adf999dab73a6eb02669c3d82dbb27a3dd6
+  version: 0525c875b75ca60b9e67ddc44496aa16f21066b0
   subpackages:
   - formatter
 - name: github.com/yudai/golcs
   version: d1c525dea8ce39ea9a783d33cf08932305373f2c
+  repo: https://github.com/yudai/golcs
 - name: golang.org/x/crypto
   version: de0752318171da717af4ce24d0a2e8626afaeb11
   subpackages:
@@ -450,7 +480,7 @@ imports:
   - googleapi/internal/uritemplates
   - storage/v1
 - name: google.golang.org/appengine
-  version: ae0ab99deb4dc413a2b4bd6c8bdd0eb67f1e4d06
+  version: a37df1387b4521194676d88c79230c613610d5f4
   subpackages:
   - internal
   - internal/app_identity
@@ -874,32 +904,4 @@ imports:
   - pkg/handler
   - pkg/util
   - pkg/util/proto
-- name: kmodules.xyz/custom-resources
-  version: 6d398bd2d81b1d6a811ad026c1dd24f1564a1f3c
-  repo: https://github.com/kmodules/custom-resources.git
-  vcs: git
-  subpackages:
-  - apis/appcatalog
-  - apis/appcatalog/v1alpha1
-  - client/clientset/versioned/scheme
-  - client/clientset/versioned/typed/appcatalog/v1alpha1
-- name: kmodules.xyz/monitoring-agent-api
-  version: c68fa034fbbaeb8c930c17d1ec0790a4ea46bad3
-  repo: https://github.com/kmodules/monitoring-agent-api.git
-  vcs: git
-  subpackages:
-  - api/v1
-- name: kmodules.xyz/objectstore-api
-  version: ebe27c957a5bf41e0680776e3626b5507087f4c3
-  repo: https://github.com/kmodules/objectstore-api.git
-  vcs: git
-  subpackages:
-  - api/v1
-  - osm
-- name: kmodules.xyz/offshoot-api
-  version: 2ab6d9decb219e8465875d80be5d6bc754052bd9
-  repo: https://github.com/kmodules/offshoot-api.git
-  vcs: git
-  subpackages:
-  - api/v1
 testImports: []

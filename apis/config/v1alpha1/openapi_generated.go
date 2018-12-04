@@ -339,21 +339,21 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/apimachinery/pkg/runtime.Unknown":                                             schema_k8sio_apimachinery_pkg_runtime_Unknown(ref),
 		"k8s.io/apimachinery/pkg/util/intstr.IntOrString":                                     schema_apimachinery_pkg_util_intstr_IntOrString(ref),
 		"k8s.io/apimachinery/pkg/version.Info":                                                schema_k8sio_apimachinery_pkg_version_Info(ref),
-		"kmodules.xyz/monitoring-agent-api/api/v1.AgentSpec":                                  schema_kmodulesxyz_monitoring_agent_api_api_v1_AgentSpec(ref),
-		"kmodules.xyz/monitoring-agent-api/api/v1.PrometheusSpec":                             schema_kmodulesxyz_monitoring_agent_api_api_v1_PrometheusSpec(ref),
-		"kmodules.xyz/objectstore-api/api/v1.AzureSpec":                                       schema_kmodulesxyz_objectstore_api_api_v1_AzureSpec(ref),
-		"kmodules.xyz/objectstore-api/api/v1.B2Spec":                                          schema_kmodulesxyz_objectstore_api_api_v1_B2Spec(ref),
-		"kmodules.xyz/objectstore-api/api/v1.Backend":                                         schema_kmodulesxyz_objectstore_api_api_v1_Backend(ref),
-		"kmodules.xyz/objectstore-api/api/v1.GCSSpec":                                         schema_kmodulesxyz_objectstore_api_api_v1_GCSSpec(ref),
-		"kmodules.xyz/objectstore-api/api/v1.LocalSpec":                                       schema_kmodulesxyz_objectstore_api_api_v1_LocalSpec(ref),
-		"kmodules.xyz/objectstore-api/api/v1.RestServerSpec":                                  schema_kmodulesxyz_objectstore_api_api_v1_RestServerSpec(ref),
-		"kmodules.xyz/objectstore-api/api/v1.S3Spec":                                          schema_kmodulesxyz_objectstore_api_api_v1_S3Spec(ref),
-		"kmodules.xyz/objectstore-api/api/v1.SwiftSpec":                                       schema_kmodulesxyz_objectstore_api_api_v1_SwiftSpec(ref),
-		"kmodules.xyz/offshoot-api/api/v1.ObjectMeta":                                         schema_kmodulesxyz_offshoot_api_api_v1_ObjectMeta(ref),
-		"kmodules.xyz/offshoot-api/api/v1.PodSpec":                                            schema_kmodulesxyz_offshoot_api_api_v1_PodSpec(ref),
-		"kmodules.xyz/offshoot-api/api/v1.PodTemplateSpec":                                    schema_kmodulesxyz_offshoot_api_api_v1_PodTemplateSpec(ref),
-		"kmodules.xyz/offshoot-api/api/v1.ServiceSpec":                                        schema_kmodulesxyz_offshoot_api_api_v1_ServiceSpec(ref),
-		"kmodules.xyz/offshoot-api/api/v1.ServiceTemplateSpec":                                schema_kmodulesxyz_offshoot_api_api_v1_ServiceTemplateSpec(ref),
+		"github.com/tekliner/monitoring-agent-api/api/v1.AgentSpec":                           schema_kmodulesxyz_monitoring_agent_api_api_v1_AgentSpec(ref),
+		"github.com/tekliner/monitoring-agent-api/api/v1.PrometheusSpec":                      schema_kmodulesxyz_monitoring_agent_api_api_v1_PrometheusSpec(ref),
+		"github.com/tekliner/objectstore-api/api/v1.AzureSpec":                                schema_kmodulesxyz_objectstore_api_api_v1_AzureSpec(ref),
+		"github.com/tekliner/objectstore-api/api/v1.B2Spec":                                   schema_kmodulesxyz_objectstore_api_api_v1_B2Spec(ref),
+		"github.com/tekliner/objectstore-api/api/v1.Backend":                                  schema_kmodulesxyz_objectstore_api_api_v1_Backend(ref),
+		"github.com/tekliner/objectstore-api/api/v1.GCSSpec":                                  schema_kmodulesxyz_objectstore_api_api_v1_GCSSpec(ref),
+		"github.com/tekliner/objectstore-api/api/v1.LocalSpec":                                schema_kmodulesxyz_objectstore_api_api_v1_LocalSpec(ref),
+		"github.com/tekliner/objectstore-api/api/v1.RestServerSpec":                           schema_kmodulesxyz_objectstore_api_api_v1_RestServerSpec(ref),
+		"github.com/tekliner/objectstore-api/api/v1.S3Spec":                                   schema_kmodulesxyz_objectstore_api_api_v1_S3Spec(ref),
+		"github.com/tekliner/objectstore-api/api/v1.SwiftSpec":                                schema_kmodulesxyz_objectstore_api_api_v1_SwiftSpec(ref),
+		"github.com/tekliner/offshoot-api/api/v1.ObjectMeta":                                  schema_kmodulesxyz_offshoot_api_api_v1_ObjectMeta(ref),
+		"github.com/tekliner/offshoot-api/api/v1.PodSpec":                                     schema_kmodulesxyz_offshoot_api_api_v1_PodSpec(ref),
+		"github.com/tekliner/offshoot-api/api/v1.PodTemplateSpec":                             schema_kmodulesxyz_offshoot_api_api_v1_PodTemplateSpec(ref),
+		"github.com/tekliner/offshoot-api/api/v1.ServiceSpec":                                 schema_kmodulesxyz_offshoot_api_api_v1_ServiceSpec(ref),
+		"github.com/tekliner/offshoot-api/api/v1.ServiceTemplateSpec":                         schema_kmodulesxyz_offshoot_api_api_v1_ServiceTemplateSpec(ref),
 	}
 }
 
@@ -14459,14 +14459,14 @@ func schema_kmodulesxyz_monitoring_agent_api_api_v1_AgentSpec(ref common.Referen
 					},
 					"prometheus": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("kmodules.xyz/monitoring-agent-api/api/v1.PrometheusSpec"),
+							Ref: ref("github.com/tekliner/monitoring-agent-api/api/v1.PrometheusSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"kmodules.xyz/monitoring-agent-api/api/v1.PrometheusSpec"},
+			"github.com/tekliner/monitoring-agent-api/api/v1.PrometheusSpec"},
 	}
 }
 
@@ -14578,39 +14578,39 @@ func schema_kmodulesxyz_objectstore_api_api_v1_Backend(ref common.ReferenceCallb
 					},
 					"local": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("kmodules.xyz/objectstore-api/api/v1.LocalSpec"),
+							Ref: ref("github.com/tekliner/objectstore-api/api/v1.LocalSpec"),
 						},
 					},
 					"s3": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("kmodules.xyz/objectstore-api/api/v1.S3Spec"),
+							Ref: ref("github.com/tekliner/objectstore-api/api/v1.S3Spec"),
 						},
 					},
 					"gcs": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("kmodules.xyz/objectstore-api/api/v1.GCSSpec"),
+							Ref: ref("github.com/tekliner/objectstore-api/api/v1.GCSSpec"),
 						},
 					},
 					"azure": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("kmodules.xyz/objectstore-api/api/v1.AzureSpec"),
+							Ref: ref("github.com/tekliner/objectstore-api/api/v1.AzureSpec"),
 						},
 					},
 					"swift": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("kmodules.xyz/objectstore-api/api/v1.SwiftSpec"),
+							Ref: ref("github.com/tekliner/objectstore-api/api/v1.SwiftSpec"),
 						},
 					},
 					"b2": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("kmodules.xyz/objectstore-api/api/v1.B2Spec"),
+							Ref: ref("github.com/tekliner/objectstore-api/api/v1.B2Spec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"kmodules.xyz/objectstore-api/api/v1.AzureSpec", "kmodules.xyz/objectstore-api/api/v1.B2Spec", "kmodules.xyz/objectstore-api/api/v1.GCSSpec", "kmodules.xyz/objectstore-api/api/v1.LocalSpec", "kmodules.xyz/objectstore-api/api/v1.S3Spec", "kmodules.xyz/objectstore-api/api/v1.SwiftSpec"},
+			"github.com/tekliner/objectstore-api/api/v1.AzureSpec", "github.com/tekliner/objectstore-api/api/v1.B2Spec", "github.com/tekliner/objectstore-api/api/v1.GCSSpec", "github.com/tekliner/objectstore-api/api/v1.LocalSpec", "github.com/tekliner/objectstore-api/api/v1.S3Spec", "github.com/tekliner/objectstore-api/api/v1.SwiftSpec"},
 	}
 }
 
@@ -15083,26 +15083,26 @@ func schema_kmodulesxyz_offshoot_api_api_v1_PodTemplateSpec(ref common.Reference
 					"metadata": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
-							Ref:         ref("kmodules.xyz/offshoot-api/api/v1.ObjectMeta"),
+							Ref:         ref("github.com/tekliner/offshoot-api/api/v1.ObjectMeta"),
 						},
 					},
 					"controller": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Workload controller's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
-							Ref:         ref("kmodules.xyz/offshoot-api/api/v1.ObjectMeta"),
+							Ref:         ref("github.com/tekliner/offshoot-api/api/v1.ObjectMeta"),
 						},
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of the pod. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status",
-							Ref:         ref("kmodules.xyz/offshoot-api/api/v1.PodSpec"),
+							Ref:         ref("github.com/tekliner/offshoot-api/api/v1.PodSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"kmodules.xyz/offshoot-api/api/v1.ObjectMeta", "kmodules.xyz/offshoot-api/api/v1.PodSpec"},
+			"github.com/tekliner/offshoot-api/api/v1.ObjectMeta", "github.com/tekliner/offshoot-api/api/v1.PodSpec"},
 	}
 }
 
@@ -15191,19 +15191,19 @@ func schema_kmodulesxyz_offshoot_api_api_v1_ServiceTemplateSpec(ref common.Refer
 					"metadata": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata",
-							Ref:         ref("kmodules.xyz/offshoot-api/api/v1.ObjectMeta"),
+							Ref:         ref("github.com/tekliner/offshoot-api/api/v1.ObjectMeta"),
 						},
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of the service. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status",
-							Ref:         ref("kmodules.xyz/offshoot-api/api/v1.ServiceSpec"),
+							Ref:         ref("github.com/tekliner/offshoot-api/api/v1.ServiceSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"kmodules.xyz/offshoot-api/api/v1.ObjectMeta", "kmodules.xyz/offshoot-api/api/v1.ServiceSpec"},
+			"github.com/tekliner/offshoot-api/api/v1.ObjectMeta", "github.com/tekliner/offshoot-api/api/v1.ServiceSpec"},
 	}
 }

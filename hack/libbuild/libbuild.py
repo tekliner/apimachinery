@@ -503,31 +503,31 @@ DEP_LIST = [
       "version": "release-9.0"
     },
     {
-      "package": "kmodules.xyz/custom-resources",
-      "repo": "https://github.com/kmodules/custom-resources.git",
+      "package": "github.com/tekliner/custom-resources",
+      "repo": "https://github.com/tekliner/custom-resources.git",
       "vcs": "git",
       "version": "release-9.0"
     },
     {
-      "package": "kmodules.xyz/monitoring-agent-api",
-      "repo": "https://github.com/kmodules/monitoring-agent-api.git",
+      "package": "github.com/tekliner/monitoring-agent-api",
+      "repo": "https://github.com/tekliner/monitoring-agent-api.git",
       "vcs": "git",
       "version": "release-9.0"
     },
     {
-      "package": "kmodules.xyz/objectstore-api",
-      "repo": "https://github.com/kmodules/objectstore-api.git",
+      "package": "github.com/tekliner/objectstore-api",
+      "repo": "https://github.com/tekliner/objectstore-api.git",
       "vcs": "git",
       "version": "release-9.0"
     },
     {
-      "package": "kmodules.xyz/offshoot-api",
-      "repo": "https://github.com/kmodules/offshoot-api.git",
+      "package": "github.com/tekliner/offshoot-api",
+      "repo": "https://github.com/tekliner/offshoot-api.git",
       "vcs": "git",
       "version": "release-9.0"
     },
     {
-      "package": "kmodules.xyz/openshift",
+      "package": "github.com/kmodules/openshift",
       "repo": "https://github.com/kmodules/openshift.git",
       "vcs": "git",
       "version": "release-9.0"

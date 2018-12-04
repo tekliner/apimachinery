@@ -9,6 +9,7 @@ import (
 	api "github.com/tekliner/apimachinery/apis/kubedb/v1alpha1"
 	extFake "github.com/tekliner/apimachinery/client/clientset/versioned/fake"
 	"github.com/tekliner/apimachinery/client/clientset/versioned/scheme"
+	store "github.com/tekliner/objectstore-api/api/v1"
 	admission "k8s.io/api/admission/v1beta1"
 	authenticationV1 "k8s.io/api/authentication/v1"
 	core "k8s.io/api/core/v1"
@@ -18,7 +19,6 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes/fake"
 	clientSetScheme "k8s.io/client-go/kubernetes/scheme"
-	store "kmodules.xyz/objectstore-api/api/v1"
 )
 
 func init() {

@@ -8,6 +8,7 @@ import (
 	api "github.com/tekliner/apimachinery/apis/kubedb/v1alpha1"
 	cs "github.com/tekliner/apimachinery/client/clientset/versioned"
 	kubedbinformers "github.com/tekliner/apimachinery/client/informers/externalversions"
+	appcat_cs "github.com/tekliner/custom-resources/client/clientset/versioned/typed/appcatalog/v1alpha1"
 	batch "k8s.io/api/batch/v1"
 	crd_cs "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/typed/apiextensions/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -17,7 +18,6 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
-	appcat_cs "kmodules.xyz/custom-resources/client/clientset/versioned/typed/appcatalog/v1alpha1"
 )
 
 type Controller struct {

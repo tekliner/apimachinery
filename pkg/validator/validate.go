@@ -7,12 +7,12 @@ import (
 	"github.com/appscode/go/arrays"
 	"github.com/pkg/errors"
 	api "github.com/tekliner/apimachinery/apis/kubedb/v1alpha1"
+	mona "github.com/tekliner/monitoring-agent-api/api/v1"
+	store "github.com/tekliner/objectstore-api/api/v1"
 	core "k8s.io/api/core/v1"
 	kerr "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
-	mona "kmodules.xyz/monitoring-agent-api/api/v1"
-	store "kmodules.xyz/objectstore-api/api/v1"
 )
 
 func ValidateStorage(client kubernetes.Interface, storageType api.StorageType, spec *core.PersistentVolumeClaimSpec) error {

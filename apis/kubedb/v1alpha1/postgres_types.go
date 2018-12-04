@@ -2,12 +2,12 @@ package v1alpha1
 
 import (
 	"github.com/appscode/go/encoding/json/types"
+	mona "github.com/tekliner/monitoring-agent-api/api/v1"
+	store "github.com/tekliner/objectstore-api/api/v1"
+	ofst "github.com/tekliner/offshoot-api/api/v1"
 	apps "k8s.io/api/apps/v1"
 	core "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	mona "kmodules.xyz/monitoring-agent-api/api/v1"
-	store "kmodules.xyz/objectstore-api/api/v1"
-	ofst "kmodules.xyz/offshoot-api/api/v1"
 )
 
 const (

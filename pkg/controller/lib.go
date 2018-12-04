@@ -9,11 +9,11 @@ import (
 	_ "github.com/graymeta/stow/google"
 	_ "github.com/graymeta/stow/s3"
 	api "github.com/tekliner/apimachinery/apis/kubedb/v1alpha1"
+	"github.com/tekliner/objectstore-api/osm"
 	batch "k8s.io/api/batch/v1"
 	core "k8s.io/api/core/v1"
 	kerr "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"kmodules.xyz/objectstore-api/osm"
 )
 
 func (c *Controller) DeleteSnapshotData(snapshot *api.Snapshot) error {

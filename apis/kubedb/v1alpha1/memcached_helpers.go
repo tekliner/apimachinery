@@ -7,10 +7,10 @@ import (
 	meta_util "github.com/appscode/kutil/meta"
 	"github.com/tekliner/apimachinery/apis"
 	"github.com/tekliner/apimachinery/apis/kubedb"
+	appcat "github.com/tekliner/custom-resources/apis/appcatalog/v1alpha1"
+	mona "github.com/tekliner/monitoring-agent-api/api/v1"
 	apps "k8s.io/api/apps/v1"
 	apiextensions "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
-	appcat "kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1"
-	mona "kmodules.xyz/monitoring-agent-api/api/v1"
 )
 
 var _ apis.ResourceInfo = &Memcached{}
