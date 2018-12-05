@@ -19,9 +19,9 @@ limitations under the License.
 package fake
 
 import (
+	v1alpha1 "github.com/tekliner/custom-resources/client/clientset/versioned/typed/appcatalog/v1alpha1"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
-	v1alpha1 "github.com/tekliner/custom-resources/client/clientset/versioned/typed/appcatalog/v1alpha1"
 )
 
 type FakeAppcatalogV1alpha1 struct {

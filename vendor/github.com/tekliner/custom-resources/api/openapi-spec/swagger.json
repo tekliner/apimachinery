@@ -128,7 +128,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBindingList"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBindingList"
             }
           }
         },
@@ -287,7 +287,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBindingList"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBindingList"
             }
           }
         },
@@ -321,7 +321,7 @@
             "in": "body",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           }
         ],
@@ -329,19 +329,19 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           },
           "201": {
             "description": "Created",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           },
           "202": {
             "description": "Accepted",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           }
         },
@@ -482,7 +482,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           }
         },
@@ -516,7 +516,7 @@
             "in": "body",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           }
         ],
@@ -524,13 +524,13 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           },
           "201": {
             "description": "Created",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           }
         },
@@ -650,7 +650,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+              "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
             }
           }
         },
@@ -1016,6 +1016,135 @@
     }
   },
   "definitions": {
+    "com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding": {
+      "description": "AppBinding defines a generic user application.",
+      "properties": {
+        "apiVersion": {
+          "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+          "type": "string"
+        },
+        "kind": {
+          "description": "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+          "type": "string"
+        },
+        "metadata": {
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+        },
+        "spec": {
+          "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBindingSpec"
+        }
+      },
+      "x-kubernetes-group-version-kind": [
+        {
+          "group": "appcatalog.appscode.com",
+          "version": "v1alpha1",
+          "kind": "AppBinding"
+        }
+      ]
+    },
+    "com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBindingList": {
+      "description": "AppBindingList is a list of Apps",
+      "properties": {
+        "apiVersion": {
+          "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
+          "type": "string"
+        },
+        "items": {
+          "description": "Items is a list of AppBinding CRD objects",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
+          }
+        },
+        "kind": {
+          "description": "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
+          "type": "string"
+        },
+        "metadata": {
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta"
+        }
+      },
+      "x-kubernetes-group-version-kind": [
+        {
+          "group": "appcatalog.appscode.com",
+          "version": "v1alpha1",
+          "kind": "AppBindingList"
+        }
+      ]
+    },
+    "com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.AppBindingSpec": {
+      "description": "AppBindingSpec is the spec for app",
+      "required": [
+        "clientConfig"
+      ],
+      "properties": {
+        "clientConfig": {
+          "description": "ClientConfig defines how to communicate with the app. Required",
+          "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.ClientConfig"
+        },
+        "parameters": {
+          "description": "Parameters is a set of the parameters to be used to connect to the app. The inline YAML/JSON payload to be translated into equivalent JSON object.\n\nThe Parameters field is NOT secret or secured in any way and should NEVER be used to hold sensitive information. To set parameters that contain secret information, you should ALWAYS store that information in a Secret.",
+          "$ref": "#/definitions/io.k8s.apimachinery.pkg.runtime.RawExtension"
+        },
+        "secret": {
+          "description": "Secret is the name of the secret to create in the AppBinding's namespace that will hold the credentials associated with the AppBinding.",
+          "$ref": "#/definitions/io.k8s.api.core.v1.LocalObjectReference"
+        },
+        "type": {
+          "description": "Used to facilitate programmatic handling of application.",
+          "type": "string"
+        }
+      }
+    },
+    "com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.ClientConfig": {
+      "description": "ClientConfig contains the information to make a connection with an app",
+      "properties": {
+        "caBundle": {
+          "description": "CABundle is a PEM encoded CA bundle which will be used to validate the serving certificate of this app.",
+          "type": "string",
+          "format": "byte"
+        },
+        "insecureSkipTLSVerify": {
+          "description": "InsecureSkipTLSVerify disables TLS certificate verification when communicating with this app. This is strongly discouraged.  You should use the CABundle instead.",
+          "type": "boolean"
+        },
+        "service": {
+          "description": "`service` is a reference to the service for this app. Either `service` or `url` must be specified.\n\nIf the webhook is running within the cluster, then you should use `service`.",
+          "$ref": "#/definitions/com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.ServiceReference"
+        },
+        "url": {
+          "description": "`url` gives the location of the app, in standard URL form (`[scheme://]host:port/path`). Exactly one of `url` or `service` must be specified.\n\nThe `host` should not refer to a service running in the cluster; use the `service` field instead. The host might be resolved via external DNS in some apiservers (e.g., `kube-apiserver` cannot resolve in-cluster DNS as that would be a layering violation). `host` may also be an IP address.\n\nA path is optional, and if present may be any string permissible in a URL. You may use the path to pass an arbitrary string to the app, for example, a cluster identifier.\n\nAttempting to use a user or basic auth e.g. \"user:password@\" is not allowed. Fragments (\"#...\") and query parameters (\"?...\") are not allowed, either.",
+          "type": "string"
+        }
+      }
+    },
+    "com.github.tekliner.custom-resources.apis.appcatalog.v1alpha1.ServiceReference": {
+      "description": "ServiceReference holds a reference to Service.legacy.k8s.io",
+      "required": [
+        "scheme",
+        "name",
+        "port"
+      ],
+      "properties": {
+        "name": {
+          "description": "`name` is the name of the service. Required",
+          "type": "string"
+        },
+        "path": {
+          "description": "`path` is an optional URL path which will be sent in any request to this service.",
+          "type": "string"
+        },
+        "port": {
+          "description": "The port that will be exposed by this app.",
+          "type": "integer",
+          "format": "int32"
+        },
+        "scheme": {
+          "description": "Specifies which scheme to use, for example: http, https If specified, then it will applied as prefix in this format: scheme:// If not specified, then nothing will be prefixed",
+          "type": "string"
+        }
+      }
+    },
     "io.k8s.api.core.v1.LocalObjectReference": {
       "description": "LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.",
       "properties": {
@@ -1594,134 +1723,14 @@
     },
     "io.k8s.apimachinery.pkg.runtime.RawExtension": {
       "description": "RawExtension is used to hold extensions in external versions.\n\nTo use this, make a field which has RawExtension as its type in your external, versioned struct, and Object in your internal struct. You also need to register your various plugin types.\n\n// Internal package: type MyAPIObject struct {\n\truntime.TypeMeta `json:\",inline\"`\n\tMyPlugin runtime.Object `json:\"myPlugin\"`\n} type PluginA struct {\n\tAOption string `json:\"aOption\"`\n}\n\n// External package: type MyAPIObject struct {\n\truntime.TypeMeta `json:\",inline\"`\n\tMyPlugin runtime.RawExtension `json:\"myPlugin\"`\n} type PluginA struct {\n\tAOption string `json:\"aOption\"`\n}\n\n// On the wire, the JSON will look something like this: {\n\t\"kind\":\"MyAPIObject\",\n\t\"apiVersion\":\"v1\",\n\t\"myPlugin\": {\n\t\t\"kind\":\"PluginA\",\n\t\t\"aOption\":\"foo\",\n\t},\n}\n\nSo what happens? Decode first uses json or yaml to unmarshal the serialized data into your external MyAPIObject. That causes the raw JSON to be stored, but not unpacked. The next step is to copy (using pkg/conversion) into the internal struct. The runtime package's DefaultScheme has conversion functions installed which will unpack the JSON stored in RawExtension, turning it into the correct object type, and storing it in the Object. (TODO: In the case where the object is of an unknown type, a runtime.Unknown object will be created and stored.)",
-      "type": "object"
-    },
-    "xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding": {
-      "description": "AppBinding defines a generic user application.",
-      "properties": {
-        "apiVersion": {
-          "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
-          "type": "string"
-        },
-        "kind": {
-          "description": "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
-          "type": "string"
-        },
-        "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
-        },
-        "spec": {
-          "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBindingSpec"
-        }
-      },
-      "x-kubernetes-group-version-kind": [
-        {
-          "group": "appcatalog.appscode.com",
-          "version": "v1alpha1",
-          "kind": "AppBinding"
-        }
-      ]
-    },
-    "xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBindingList": {
-      "description": "AppBindingList is a list of Apps",
-      "properties": {
-        "apiVersion": {
-          "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources",
-          "type": "string"
-        },
-        "items": {
-          "description": "Items is a list of AppBinding CRD objects",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBinding"
-          }
-        },
-        "kind": {
-          "description": "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds",
-          "type": "string"
-        },
-        "metadata": {
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta"
-        }
-      },
-      "x-kubernetes-group-version-kind": [
-        {
-          "group": "appcatalog.appscode.com",
-          "version": "v1alpha1",
-          "kind": "AppBindingList"
-        }
-      ]
-    },
-    "xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.AppBindingSpec": {
-      "description": "AppBindingSpec is the spec for app",
       "required": [
-        "clientConfig"
+        "Raw"
       ],
       "properties": {
-        "clientConfig": {
-          "description": "ClientConfig defines how to communicate with the app. Required",
-          "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.ClientConfig"
-        },
-        "parameters": {
-          "description": "Parameters is a set of the parameters to be used to connect to the app. The inline YAML/JSON payload to be translated into equivalent JSON object.\n\nThe Parameters field is NOT secret or secured in any way and should NEVER be used to hold sensitive information. To set parameters that contain secret information, you should ALWAYS store that information in a Secret.",
-          "$ref": "#/definitions/io.k8s.apimachinery.pkg.runtime.RawExtension"
-        },
-        "secret": {
-          "description": "Secret is the name of the secret to create in the AppBinding's namespace that will hold the credentials associated with the AppBinding.",
-          "$ref": "#/definitions/io.k8s.api.core.v1.LocalObjectReference"
-        },
-        "type": {
-          "description": "Used to facilitate programmatic handling of application.",
-          "type": "string"
-        }
-      }
-    },
-    "xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.ClientConfig": {
-      "description": "ClientConfig contains the information to make a connection with an app",
-      "properties": {
-        "caBundle": {
-          "description": "CABundle is a PEM encoded CA bundle which will be used to validate the serving certificate of this app.",
+        "Raw": {
+          "description": "Raw is the underlying serialization of this object.",
           "type": "string",
           "format": "byte"
-        },
-        "insecureSkipTLSVerify": {
-          "description": "InsecureSkipTLSVerify disables TLS certificate verification when communicating with this app. This is strongly discouraged.  You should use the CABundle instead.",
-          "type": "boolean"
-        },
-        "service": {
-          "description": "`service` is a reference to the service for this app. Either `service` or `url` must be specified.\n\nIf the webhook is running within the cluster, then you should use `service`.",
-          "$ref": "#/definitions/xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.ServiceReference"
-        },
-        "url": {
-          "description": "`url` gives the location of the app, in standard URL form (`[scheme://]host:port/path`). Exactly one of `url` or `service` must be specified.\n\nThe `host` should not refer to a service running in the cluster; use the `service` field instead. The host might be resolved via external DNS in some apiservers (e.g., `kube-apiserver` cannot resolve in-cluster DNS as that would be a layering violation). `host` may also be an IP address.\n\nA path is optional, and if present may be any string permissible in a URL. You may use the path to pass an arbitrary string to the app, for example, a cluster identifier.\n\nAttempting to use a user or basic auth e.g. \"user:password@\" is not allowed. Fragments (\"#...\") and query parameters (\"?...\") are not allowed, either.",
-          "type": "string"
-        }
-      }
-    },
-    "xyz.kmodules.custom-resources.apis.appcatalog.v1alpha1.ServiceReference": {
-      "description": "ServiceReference holds a reference to Service.legacy.k8s.io",
-      "required": [
-        "scheme",
-        "name",
-        "port"
-      ],
-      "properties": {
-        "name": {
-          "description": "`name` is the name of the service. Required",
-          "type": "string"
-        },
-        "path": {
-          "description": "`path` is an optional URL path which will be sent in any request to this service.",
-          "type": "string"
-        },
-        "port": {
-          "description": "The port that will be exposed by this app.",
-          "type": "integer",
-          "format": "int32"
-        },
-        "scheme": {
-          "description": "Specifies which scheme to use, for example: http, https If specified, then it will applied as prefix in this format: scheme:// If not specified, then nothing will be prefixed",
-          "type": "string"
         }
       }
     }

@@ -402,7 +402,12 @@ spec:
                   description: Duration is a wrapper around time.Duration which supports
                     correct marshaling to YAML and JSON. In particular, it marshals
                     into strings, which can be used as map keys in json.
-                  type: string
+                  properties:
+                    Duration:
+                      format: int64
+                      type: integer
+                  required:
+                  - Duration
                 id:
                   description: lease id
                   type: string

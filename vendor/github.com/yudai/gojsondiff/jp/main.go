@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/urfave/cli"
+	"github.com/codegangsta/cli"
 
 	diff "github.com/yudai/gojsondiff"
 )

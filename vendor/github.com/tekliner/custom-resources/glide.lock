@@ -1,17 +1,17 @@
-hash: 58569da3971e837bb6f1f532db2277f7be98d9e34c444278865e4f359883cced
-updated: 2018-11-01T00:18:33.22243047-07:00
+hash: 9edbb159749e08b11d03488e01aa2cfb30f0926cca154ecf5ea4440034b65ede
+updated: 2018-12-05T19:13:01.241545048+07:00
 imports:
 - name: bitbucket.org/ww/goautoneg
   version: 75cd24fc2f2c2a2088577d12123ddee5f54e0675
 - name: github.com/appscode/go
-  version: a6d58457b39324ead2ffb1f24be7a0a638c9f112
+  version: aa0a55d74dac66f9b9bec9c0e7b67944115a3f44
   subpackages:
   - context
   - log
   - runtime
   - types
 - name: github.com/appscode/kutil
-  version: 3ea05651189cbff8994265360eb150d4c3513859
+  version: 239838b6231b8a27a66426e25678351ce50c4cfd
   subpackages:
   - apiextensions/v1beta1
   - openapi
@@ -128,7 +128,7 @@ imports:
 - name: github.com/emicklei/go-restful-swagger12
   version: dcef7f55730566d41eae5db10e7d6981829720f6
 - name: github.com/evanphx/json-patch
-  version: 94e38aa1586e8a6c8a75770bddf5ff84c48a106b
+  version: 36442dbdb585210f8d5a1b45e67aa323c197d5c4
 - name: github.com/ghodss/yaml
   version: 73d445a93680fa1a78ae23a5839bad48f32ba1ee
 - name: github.com/go-openapi/jsonpointer
@@ -149,13 +149,11 @@ imports:
 - name: github.com/golang/protobuf
   version: b4deda0973fb4c70b50d226b1af49f3da59f5265
   subpackages:
-  - jsonpb
   - proto
   - protoc-gen-go/descriptor
   - ptypes
   - ptypes/any
   - ptypes/duration
-  - ptypes/struct
   - ptypes/timestamp
 - name: github.com/google/btree
   version: 7d79101e329e5a3adf994758c578dab82b90c017
@@ -280,7 +278,7 @@ imports:
   subpackages:
   - rate
 - name: google.golang.org/appengine
-  version: 4a4468ece617fc8205e99368fa2200e9d1fad421
+  version: ae0ab99deb4dc413a2b4bd6c8bdd0eb67f1e4d06
   subpackages:
   - internal
   - internal/base
@@ -363,9 +361,7 @@ imports:
   - pkg/client/clientset/clientset/scheme
   - pkg/client/clientset/clientset/typed/apiextensions/v1beta1
 - name: k8s.io/apimachinery
-  version: 00edbc532482e56a75224c794deaa1366dd292cb
-  repo: https://github.com/kmodules/apimachinery.git
-  vcs: git
+  version: 6dd46049f39503a1fc8d65de4bd566829e95faff
   subpackages:
   - pkg/api/apitesting
   - pkg/api/apitesting/fuzzer

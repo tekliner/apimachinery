@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/urfave/cli"
+	"github.com/codegangsta/cli"
 
 	diff "github.com/yudai/gojsondiff"
 	"github.com/yudai/gojsondiff/formatter"
@@ -22,7 +22,7 @@ func main() {
 		cli.StringFlag{
 			Name:   "format, f",
 			Value:  "ascii",
-			Usage:  "Diff Output Format (ascii, delta)",
+			Usage:  "Diff Outpu Format (ascii, delta)",
 			EnvVar: "DIFF_FORMAT",
 		},
 		cli.BoolFlag{
@@ -30,14 +30,9 @@ func main() {
 			Usage:  "Enable coloring in the ASCII mode (not available in the delta mode)",
 			EnvVar: "COLORING",
 		},
-		cli.BoolFlag{
-			Name:   "quiet, q",
-			Usage:  "Suppress output, if no differences are found",
-			EnvVar: "QUIET",
-		},
 	}
 
-	app.Action = func(c *cli.Context) error {
+	app.Action = func(c *cli.Context) {
 		if len(c.Args()) < 2 {
 			fmt.Println("Not enough arguments.\n")
 			fmt.Printf("Usage: %s json_file another_json_file\n", app.Name)
@@ -70,38 +65,34 @@ func main() {
 		}
 
 		// Output the result
-		if d.Modified() || !c.Bool("quiet") {
-			format := c.String("format")
-			var diffString string
-			if format == "ascii" {
-				var aJson map[string]interface{}
-				json.Unmarshal(aString, &aJson)
+		format := c.String("format")
+		var diffString string
+		if format == "ascii" {
+			var aJson map[string]interface{}
+			json.Unmarshal(aString, &aJson)
 
-				config := formatter.AsciiFormatterConfig{
-					ShowArrayIndex: true,
-					Coloring:       c.Bool("coloring"),
-				}
-
-				formatter := formatter.NewAsciiFormatter(aJson, config)
-				diffString, err = formatter.Format(d)
-				if err != nil {
-					// No error can occur
-				}
-			} else if format == "delta" {
-				formatter := formatter.NewDeltaFormatter()
-				diffString, err = formatter.Format(d)
-				if err != nil {
-					// No error can occur
-				}
-			} else {
-				fmt.Printf("Unknown Foramt %s\n", format)
-				os.Exit(4)
+			config := formatter.AsciiFormatterConfig{
+				ShowArrayIndex: true,
+				Coloring:       c.Bool("coloring"),
 			}
 
-			fmt.Print(diffString)
-			return cli.NewExitError("", 1)
+			formatter := formatter.NewAsciiFormatter(aJson, config)
+			diffString, err = formatter.Format(d)
+			if err != nil {
+				// No error can occur
+			}
+		} else if format == "delta" {
+			formatter := formatter.NewDeltaFormatter()
+			diffString, err = formatter.Format(d)
+			if err != nil {
+				// No error can occur
+			}
+		} else {
+			fmt.Printf("Unknown Foramt %s\n", format)
+			os.Exit(4)
 		}
-		return nil
+
+		fmt.Print(diffString)
 	}
 
 	app.Run(os.Args)
